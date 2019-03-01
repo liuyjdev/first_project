@@ -1,3 +1,5 @@
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -7,5 +9,5 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class SpringTest {
-
+    ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationt.xml");
 }
